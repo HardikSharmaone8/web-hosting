@@ -1,0 +1,49 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="csss/weather.css" />
+    <title>Document</title>
+
+  </head>
+
+  <body style="display:flex; flex-direction:column;padding:0;margin:0;height:100vh;">
+    {{>weatherheader}}
+    <div id="container">
+      <div id="search">
+        <input id="cityname"
+          type="text"
+          placeholder="Search Your City Weather"
+          autocomplete="off"
+        />
+        <button id="searchButton" value="search">Search</button>
+      </div>
+      <div id="result">
+        <p 
+          style="color:white;  border: 1px solid gold;border-radius:5px;"
+        > </p>
+        <div id="temprature">
+          <center>
+            <p id='city' style="color:white;font-weight: bold;"></p>
+            <small id="degree"
+              style="color:white;font-weight: bold; font-size:50px; margin-right:20px;"
+            > </small>
+            <label id="sunmoon"></label>
+          </center>
+        </div>
+      </div>
+    </div>
+    {{>weatherfooter}}
+    <script src="weatherjs/weather.js"></script>
+  </body>
+
+</html>

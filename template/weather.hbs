@@ -1,0 +1,56 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="csss/weather.css" />
+    <title>Weather App </title>
+
+  </head>
+
+  <body id="body">
+   {{>weatherheader}}
+    <div id="content">
+      <div id="text">
+        <p>Welcome To The Weather App</p>
+        <h1 style="font-size:30px;">
+          Get The Latest
+          <small
+            style="color:navy; font-size:36px; font-weight:bold;"
+          >Weather</small>
+          Info Of Your City
+        </h1>
+        <div id="button"><a href="/city">Click Here</a></div>
+      </div>
+      <div id="image-frame">
+        <div id="image-container">
+          <div class="image">
+            <img src="weather.png" />
+          </div>
+          <div class="image">
+            <img src="weather1.png" />
+          </div>
+          <div class="image">
+            <img src="weather2.png" />
+          </div>
+          <div class="image">
+            <img src="weather3.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+{{>weatherfooter}}
+
+ <script src="weatherjs/weather.js"></script>
+  </body>
+
+</html>

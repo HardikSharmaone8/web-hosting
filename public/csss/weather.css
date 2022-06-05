@@ -1,0 +1,249 @@
+:root {
+    --bgcolor: rgba(3, 252, 223);
+}
+
+#body {
+    margin: auto;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header {
+    height: 50px;
+    width: 100%;
+    background-color: navy;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 120px;
+}
+
+ul li {
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+li:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+#weatherlogo {
+    margin-right: 700px;
+}
+
+.fa-snowflake {
+    font-size: 20px;
+    color: blue;
+    animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+#content {
+    height: 230px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+}
+
+#text {
+    height: 210px;
+    width: 700px;
+}
+
+p {
+    font-weight: bold;
+}
+
+#button {
+    width: 150px;
+    height: 40px;
+    background-color: navy;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 7px;
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: blue;
+}
+
+#image-frame {
+    height: 230px;
+    width: 490px;
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+#image-container {
+    height: 230px;
+    width: 2000px;
+    display: flex;
+    animation-name: img;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    position: relative;
+    transition: 2s;
+}
+
+@keyframes img {
+    0% {
+        right: 0px;
+    }
+    10% {
+        right: 0px;
+    }
+    20% {
+        right: 460px;
+    }
+    30% {
+        right: 460px;
+    }
+    40% {
+        right: 920px;
+    }
+    50% {
+        right: 920px;
+    }
+    60% {
+        right: 1360px;
+    }
+    100% {
+        right: 1360px;
+    }
+}
+
+.image {
+    height: 230px;
+    width: 410px;
+    margin-left: 28px;
+}
+
+.image img {
+    height: 230px;
+    width: 100%;
+}
+
+#footer {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 2px;
+}
+
+small {
+    font-size: 20px;
+}
+
+#container {
+    height: 400px;
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#search {
+    width: 100%;
+    height: 50px;
+    background-color: navy;
+    color: white;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+input {
+    width: 75%;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: navy;
+    color: white;
+    border: none;
+    margin-left: 15px;
+}
+
+button {
+    width: 18%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+#result {
+    height: 50%;
+    width: 50%;
+    border: 1px solid black;
+    background-color: navy;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+#temprature {
+    height: 70%;
+    width: 100%;
+    background-color: navy;
+    box-sizing: border-box;
+}
+
+
+/* .fa-sun {
+    color: orange;
+    font-size: 80px;
+}
+
+.fa-clouds-moon {
+    font-size: 80px;
+    color: white;
+} */
+
+#sunmoon {
+    font-size: 80px;
+    color: white;
+}
