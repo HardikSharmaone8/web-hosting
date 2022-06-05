@@ -65,7 +65,7 @@ document.getElementById("searchButton").addEventListener("click", (event) => {
     } else {
         async function disp() {
             var readData = await fetch(
-                `http://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=2fbd5393181d420976588afcd94f8826`
+                `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=2fbd5393181d420976588afcd94f8826`
             );
             var res = await readData.json();
             return res;
